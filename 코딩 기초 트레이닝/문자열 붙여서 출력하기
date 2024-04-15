@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.next();
+        String b = sc.next();
+        
+        System.out.print(a+b);
+    }
+}
+
+// Scanner는 스페이스로 기준으로 나누어짐
+// a 문자열 입력 후 스페이스바 입력 시 String b 문자열 입력으로 넘어가짐
