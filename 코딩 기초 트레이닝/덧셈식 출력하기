@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.printf("%d + %d = %d", a, b, a+b);
+    }
+}
+
+// 변수를 여러가지 형식으로 변경환하여 출력할 있는 printf() 를 이용하여 문제 해결
