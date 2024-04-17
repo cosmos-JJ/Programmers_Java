@@ -1,0 +1,13 @@
+class Solution {
+    public String solution(String str1, String str2) {
+        String answer = "";
+
+        for(int i=0; i<str1.length(); i++){
+            answer += String.valueOf(str1.charAt(i)) + String.valueOf(str2.charAt(i));
+        }
+        return answer;
+    }
+}
+
+//String.valueOf()를 이용하여 char를 String으로 형변환
+//반복문을 통해서 인덱스 순서대로 하나씩 가져와 answer에 붙여넣기 형식으로 코드 작성
