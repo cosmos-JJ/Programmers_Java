@@ -1,0 +1,13 @@
+class Solution {
+    public String solution(String my_string, int k) {
+        String answer = "";
+        
+        for(int i=1; i<=k; i++){
+            answer += my_string;
+        }
+        
+        return answer;
+    }
+}
+
+// 반복문을 통해 my_string을 k번 더하기 ( int i=1 부터 i<=k)
