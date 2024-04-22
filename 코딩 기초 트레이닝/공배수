@@ -1,0 +1,9 @@
+class Solution {
+    public int solution(int number, int n, int m) {
+        if(number%n==0 && number%m==0)return 1;
+        else return 0;
+    }
+}
+
+//공배수 : 두 개 이상의 자연수의 공통인 배수
+//-> 두 수가 and 조건으로 나누어 떨어지는 수가 공배수이므로 둘다 나누어 떨어지면 return 1 아니면 return 0
