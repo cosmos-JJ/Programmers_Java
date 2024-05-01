@@ -1,0 +1,18 @@
+class Solution {
+    public String solution(int[] numLog) {
+        String answer = "";
+        
+        for(int i=numLog.length-1; i>0; i--){
+            int num = numLog[i]-numLog[i-1];
+            
+            if(num == 1) answer = answer + "w";
+            else if(num == -1) answer = answer + "s";
+            else if(num == 10) answer = answer + "d";
+            else answer = answer + "a";
+        }
+        StringBuffer sb = new StringBuffer(answer);
+        String reverseAnswer = sb.reverse().toString();
+        
+        return reverseAnswer;
+    }
+}
