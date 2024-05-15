@@ -1,0 +1,17 @@
+class Solution {
+    public int solution(int[] num_list) {
+        int answer = 0;
+        String even = "";
+        String odd = "";
+        
+        for(int i : num_list){
+            // 2로 나누어 떨어지면 짝수
+            // String.valueOf 메소드를 이용하여 정수를 문자열로 캐스팅
+            if(i%2 == 0) even += String.valueOf(i);
+            else odd += String.valueOf(i);
+        }
+        // Integer.parseInt 메소드를 이용하여 문자열을 정수로 캐스팅
+        answer = Integer.parseInt(odd) + Integer.parseInt(even);
+        return answer;
+    }
+}
