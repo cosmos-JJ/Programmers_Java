@@ -1,0 +1,17 @@
+class Solution {
+    public int solution(int[] num_list) {
+        int answer = 0;
+        // product 변수는 곱셈을 위한 변수이므로 값의 변화를 위해서 1을 선언
+        int product = 1;
+        int sum = 0;
+        
+        for(int i: num_list) {
+            product *= i;
+            sum += i;
+        }
+        if(product < (sum*sum)) answer = 1;
+        else answer = 0;
+        
+        return answer;
+    }
+}
